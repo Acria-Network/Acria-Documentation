@@ -2,9 +2,15 @@
 
 It is recommended to use the official Acria-Oracle-Node-Qt as an Oracle Node client. Via the Acria-Oracle-Node Client it is possible to serve a single api to all compatible chains simultaniously.
 
-## Configure your Node
+## Setting up Accounts
 
-Right After starting the Acria Qt Node you have to configure it to supply all your data items. To do this you have to click on the „Config“ button.
+Right After starting the Acria Qt Node you have to configure the accounts (keystore files) to use for each chain you would like to support. Alternatively it is also possible to generate a new keystore files which will be saved under ./keystore/&#60;chain&#62;/&#60;date&#62;--&#60;address&#62;
+
+![alt text](/img/qt7.png)
+
+## Configuring your Node
+
+After setting up the accounts you have to configure the Oracle Node to supply all your data items. To do this you have to click on the „Config“ button.
 
 ![alt text](/img/qt1.png)
 
@@ -39,19 +45,29 @@ The available conversions/commands include:
 
 To connect to your local nodes you have to first click on the settings icon.
 
-After this a menu opens where you can specify the rpc endpoint as well as the main account of your Ethereum, Polkadot and Binance Smart Chain node. In addition to this you should now also deploy your personal data contract.
+After this a menu opens where you can specify the RPC endpoint as well as the main account of your Ethereum, Polkadot and Binance Smart Chain node. In addition to this you should now also deploy your personal data contract.
 
 ![alt text](/img/qt4.png)
 
+?> **Tip** The default RPC address of geth is http://127.0.0.1:8545
+
 ### Starting a geth node
 
-Please refer to the ethereum documentation of how to start a geth node.
+To start a geth node on the goerli testnet run:
+
+```cmd
+./geth --goerli --http
+```
+
+Please refer to the official ethereum documentation for more information on how to start a geth node.
 
 https://geth.ethereum.org/docs/getting-started
 
+?> **Tip** Don't forget the --http option as the Oracle Node is otherwise unable to communicate with the geth node!
+
 ### Starting a Binance Smart Chain node
 
-Please refer to the binance smart chain documentation of how to start a node.
+Please refer to the binance smart chain documentation on how to start a node.
 
 https://docs.binance.org/smart-chain/developer/fullnode.html
 
@@ -86,5 +102,7 @@ It is possible to withdraw the earned fees on the balances tab. To withdraw clic
 ## Deploying a Node Contract
 
 In order to operate an Oracle Node it is required to have a personal Oracle Contract deployed. A contract can be deployed via the settings tab.
+
+![alt text](/img/qt8.png ':size=50%x50%')
 
 ?> **Tip** The name of an Oracle Node must be unique. The transaction will fail otherwise.
