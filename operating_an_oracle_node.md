@@ -8,6 +8,8 @@ Right After starting the Acria Qt Node you have to configure the accounts (keyst
 
 ![alt text](/img/qt7.png)
 
+!> **Important** All nonces are managed within the application. Therefore, do not attempt to make a transaction with an unlocked account outside of the application.
+
 ## Configuring your Node
 
 After setting up the accounts you have to configure the Oracle Node to supply all your data items. To do this you have to click on the „Config“ button.
@@ -18,13 +20,22 @@ After this a menu opens where you can specify each item. You can add a single ap
 
 ![alt text](/img/qt2.png ':size=50%x50%')
 
-In the following dialog you can specify all the options of that data point.
+### Creating a Resource Item
+
+In the following dialog you can specify all the options of that resource.
+
 1. The Name of the resource (e.g. GBP/USD)
 2. The API url which gets used if no additional parameters are provided
 3. The API url which gets used when an additional parameter gets provided. You should mark the place where the parameter should be placed with %data%.
 4. The parameter type which indicates the way to handle the parameter provided. See the section parameter types for more information.
 
-![alt text](/img/qt3.png ':size=50%x50%')
+In addition to this you must specify how the API response should be parsed. The options are:
+- Json: You can specify the location of the value via json keys.
+- Regex: If the response is not a Json you can use a regular expression.
+
+![alt text](/img/qt9.png ':size=80%x80%')
+
+?> **Tip** To Test all this you can make an example request to the api and then parse the response to see if everything works as expected.
 
 ### Parameter Types
 
@@ -95,7 +106,7 @@ It is possible to withdraw the earned fees on the balances tab. To withdraw clic
 
 ![alt text](/img/qt6.png)
 
-?> **Tip** It is not neccessary to claim the reward every period as the staking reward can also be claimed in bulk for multiple periods at once.
+?> **Tip** It is not neccessary to claim the reward every period as the reward can also be claimed in bulk for multiple periods at once.
 
 ?> **Tip** It is always possible to withdraw the fees although depending on the gas price it might be worth to wait in order to save some gas fees.
 
