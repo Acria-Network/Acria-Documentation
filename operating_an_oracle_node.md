@@ -18,7 +18,7 @@ After setting up the accounts you have to configure the Oracle Node to supply al
 
 After this a menu opens where you can specify each item. You can add a single api item by clicking on the „Add Item“ button.
 
-![alt text](/img/qt2.png ':size=50%x50%')
+![alt text](/img/qt10.png ':size=80%x80%')
 
 ### Creating a Resource Item
 
@@ -29,13 +29,23 @@ In the following dialog you can specify all the options of that resource.
 3. The API url which gets used when an additional parameter gets provided. You should mark the place where the parameter should be placed with %data%.
 4. The parameter type which indicates the way to handle the parameter provided. See the section parameter types for more information.
 
-In addition to this you must specify how the API response should be parsed. The options are:
+You must specify how the API response should be parsed. The options are:
 - Json: You can specify the location of the value via json keys.
 - Regex: If the response is not a Json you can use a regular expression.
 
-![alt text](/img/qt9.png ':size=80%x80%')
+In addition to this you can also write a short description of the resource which is useful for everyone who intends to implement this oracle node.
+
+![alt text](/img/qt11.png ':size=80%x80%')
 
 ?> **Tip** To Test all this you can make an example request to the api and then parse the response to see if everything works as expected.
+
+### Editing a Resource Item
+
+In addition it is also possible to edit an existing item. To edit an item simply double click it in the table view. After this, a window opens where you can edit it.
+
+![alt text](/img/qt12.png ':size=80%x80%')
+
+?> **Tip** You can also click on the "Save as Copy" button to save a copy of the item. This might be useful to create a lot of similar items.
 
 ### Parameter Types
 
