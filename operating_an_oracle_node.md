@@ -1,6 +1,6 @@
 # Operating an Oracle Node
 
-It is recommended to use the official Acria-Oracle-Node-Qt as an Oracle Node client. Via the Acria-Oracle-Node Client it is possible to serve a single api to all compatible chains simultaniously.
+It is recommended to use the official Acria-Oracle-Node-Qt as an Oracle Node client. Via the Acria-Oracle-Node Client it is possible to serve a single API to all compatible chains simultaneously.
 
 ## Setting up Accounts
 
@@ -16,7 +16,7 @@ After setting up the accounts you have to configure the Oracle Node to supply al
 
 ![alt text](/img/qt1.png)
 
-After this a menu opens where you can specify each item. You can add a single api item by clicking on the „Add Item“ button.
+After this a menu opens where you can specify each item. You can add a single API item by clicking on the „Add Item“ button.
 
 ![alt text](/img/qt10.png ':size=80%x80%')
 
@@ -25,19 +25,19 @@ After this a menu opens where you can specify each item. You can add a single ap
 In the following dialog you can specify all the options of that resource.
 
 1. The Name of the resource (e.g. GBP/USD)
-2. The API url which gets used if no additional parameters are provided
-3. The API url which gets used when an additional parameter gets provided. You should mark the place where the parameter should be placed with %data%.
+2. The API URL which gets used if no additional parameters are provided
+3. The API URL which gets used when an additional parameter gets provided. You should mark the place where the parameter should be placed with %data%.
 4. The parameter type which indicates the way to handle the parameter provided. See the section parameter types for more information.
 
 You must specify how the API response should be parsed. The options are:
-- Json: You can specify the location of the value via json keys.
+- Json: You can specify the location of the value via Json keys.
 - Regex: If the response is not a Json you can use a regular expression.
 
 In addition to this you can also write a short description of the resource which is useful for everyone who intends to implement this oracle node.
 
 ![alt text](/img/qt11.png ':size=80%x80%')
 
-?> **Tip** To Test all this you can make an example request to the api and then parse the response to see if everything works as expected.
+?> **Tip** To Test all this you can make an example request to the API and then parse the response to see if everything works as expected.
 
 ### Editing a Resource Item
 
@@ -49,7 +49,7 @@ In addition it is also possible to edit an existing item. To edit an item simply
 
 ### Parameter Types
 
-The parameter type defines the way to process the parameter provided. For example a user might provide a unix timestamp but your api-url actually needs a timestamp string such as "2021-18-03".
+The parameter type defines the way to process the parameter provided. For example a user might provide a unix-timestamp but your API URL actually needs a timestamp string such as "2021-18-03".
 
 In such a case one would enter `timestamp => from_timestamp yyyy-MM-dd`. This command first converts the provided uint256 to a normal timestamp and afterwards to a timestamp with the format `yyyy-MM-dd`.
 
@@ -80,7 +80,7 @@ To start a geth node on the goerli testnet run:
 ./geth --goerli --http
 ```
 
-Please refer to the official ethereum documentation for more information on how to start a geth node.
+Please refer to the official Ethereum documentation for more information on how to start a geth node.
 
 https://geth.ethereum.org/docs/getting-started
 
@@ -88,7 +88,7 @@ https://geth.ethereum.org/docs/getting-started
 
 ### Starting a Binance Smart Chain node
 
-Please refer to the binance smart chain documentation on how to start a node.
+Please refer to the Binance Smart Chain documentation on how to start a node.
 
 https://docs.binance.org/smart-chain/developer/fullnode.html
 
@@ -106,9 +106,9 @@ The various reasons due to which slashing may occur are in detail explained belo
 
 ## Fees
 
-An Oracle Node receives 80% of the all fees paid. The other 20% are getting distributed among the stakers.
+An Oracle Node receives 80% of the all fees paid. The other 20% are getting distributed among the Stakers.
 
-?> **Tip** If there aren't any stakers active the 20% staking reward is also rewarded to the Node operator.
+?> **Tip** If there aren't any Stakers active the 20% staking reward is also rewarded to the Node operator.
 
 ## Withdrawing
 
@@ -116,7 +116,7 @@ It is possible to withdraw the earned fees on the balances tab. To withdraw clic
 
 ![alt text](/img/qt6.png)
 
-?> **Tip** It is not neccessary to claim the reward every period as the reward can also be claimed in bulk for multiple periods at once.
+?> **Tip** It is not necessary to claim the reward every period as the reward can also be claimed in bulk for multiple periods at once.
 
 ?> **Tip** It is always possible to withdraw the fees although depending on the gas price it might be worth to wait in order to save some gas fees.
 

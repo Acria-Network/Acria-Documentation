@@ -10,19 +10,20 @@ Current the Acria Network can be used on the following chains:
 - Polkadot
 - Ethereum
 - Binance Smart Chain
+- Cardano
 
 Please follow the developer guide to learn how to implement the Acria Network.
 
 ## Oracle Node Operators
 
-Oracle Node Operators are owners of an API which they also provide via the Acia Network. Via the Acria-Oracle-Node Client it is possible to serve a single api to all compatible chains simultaniously.
+Oracle Node Operators are owners of an API which they also provide via the Acia Network. Via the Acria-Oracle-Node Client it is possible to serve a single api to all compatible chains simultaneously.
 
 Please follow the Oracle Node Operator guide to learn how to become an Oracle Node Operator.
 
 ## Stakers
 
-?> **Tip** The more stakers are active on a single Oracle Node the lower the staking reward becomes.
+?> **Tip** The more Stakers are active on a single Oracle Node the lower the staking reward becomes.
 
-The Stakers are able to earn up to 20% of the fees earned by a Node. They naturally select the most profitable nodes which also supply the right information on time as otherwise due to the slashing machanic it would significantly reduce their staking reward.
+The Stakers are able to earn up to 20% of the fees earned by a Node. They naturally select the most profitable nodes which also supply the right information on time as otherwise due to the slashing mechanic it would significantly reduce their staking reward.
 
-The more staker are on a Node the more trustworthy it becomes. This means that an Oracle Node operator tries to get as many Stakers on his node as possible.
+The more Staker are on a Node the more trustworthy it becomes. This means that an Oracle Node operator tries to get as many Stakers on his node as possible.

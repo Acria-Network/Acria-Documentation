@@ -161,9 +161,9 @@ AcriaNode(node).create_request_with_data{value: msg.value, gas: 100000}("USD/GBP
 
 The first four parameters are the same as before but in addition to those there are now two additional parameters.
 - the request data which further specifies the data needed
-- the passthrough data which will be unchanged passed through to the callback function
+- the pass through data which will be unchanged passed through to the callback function
 
-?> **Tip** Keep in mind that requests with parameters cost more gas (+40000). On the pther hand the fee required might be slightly lower as more data can be deleted (15000 gas gets refunded per uint256) by the Oracle Node.
+?> **Tip** Keep in mind that requests with parameters cost more gas (+40000). On the other hand the fee required might be slightly lower as more data can be deleted (15000 gas gets refunded per uint256) by the Oracle Node.
 
 ### Requesting Data with parameters - Callback
 
@@ -183,7 +183,7 @@ The callback function is pretty much the same as before with the only exception 
 
 ### Fees
 
-The Fee provided must cover the gas required (~40000 + whatever gas is required by the callback). Otherwise a request might be stuck till the ethereum network fees are low enough for the request to be profitable for the Oracle Operator.
+The Fee provided must cover the gas required (~40000 + whatever gas is required by the callback). Otherwise a request might be stuck till the Ethereum network fees are low enough for the request to be profitable for the Oracle Operator.
 
 Oracle Operators generally only process transactions where the fee is 30% higher than the gas cost required.
 
@@ -191,7 +191,7 @@ The fee can be increased afterwards by calling the `pump_fee(uint256)` function 
 
 ### Local Blockchain
 
-It is possible to test smart contracts on a local ethereum blockchain such as ganache (https://github.com/trufflesuite/ganache/releases). Although, in this case it is required to run a Oracle Node to supply data to the local node.
+It is possible to test smart contracts on a local Ethereum blockchain such as ganache (https://github.com/trufflesuite/ganache/releases). Although, in this case it is required to run a Oracle Node to supply data to the local node.
 
 To deploy the contracts it is recommended to use truffle. After installing truffle run the following command to deploy the contracts.
 
