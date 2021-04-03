@@ -4,21 +4,27 @@ It is recommended to use the official Acria-Oracle-Node-Qt as an Oracle Node cli
 
 ## Setting up Accounts
 
-Right After starting the Acria Qt Node you have to configure the accounts (keystore files) to use for each chain you would like to support. Alternatively it is also possible to generate a new keystore files which will be saved under ./keystore/&#60;chain&#62;/&#60;date&#62;--&#60;address&#62;
+Right After starting the Acria Qt Node you have to configure the accounts (keystore files) to use for each chain you would like to support.
 
-![alt text](/img/qt7.png)
+![alt text](/img/qt19.png)
+
+Alternatively it is also possible to create a new keystore file. To do this simply click on the "Create Wallet" button followed by providing the password for the new keystore file.
+
+![alt text](/img/qt20.png ':size=50%x50%')
 
 !> **Important** All nonces are managed within the application. Therefore, do not attempt to make a transaction with an unlocked account outside of the application.
+
+?> **Tip** Keystore files are saved under `./keystore/<chain>/<date>–<address>`
 
 ## Configuring your Node
 
 After setting up the accounts you have to configure the Oracle Node to supply all your data items. To do this you have to click on the „Config“ button.
 
-![alt text](/img/qt1.png)
+![alt text](/img/qt14.png)
 
 After this a menu opens where you can specify each item. You can add a single API item by clicking on the „Add Item“ button.
 
-![alt text](/img/qt10.png ':size=80%x80%')
+![alt text](/img/qt13.png ':size=80%x80%')
 
 ### Creating a Resource Item
 
@@ -43,7 +49,7 @@ In addition to this you can also write a short description of the resource which
 
 In addition it is also possible to edit an existing item. To edit an item simply double click it in the table view. After this, a window opens where you can edit it.
 
-![alt text](/img/qt12.png ':size=80%x80%')
+![alt text](/img/qt21.png ':size=80%x80%')
 
 ?> **Tip** You can also click on the "Save as Copy" button to save a copy of the item. This might be useful to create a lot of similar items.
 
@@ -62,15 +68,31 @@ The available conversions/commands include:
 
 ?> **Tip** You can chain as many function as you like. It's not limited to two.
 
+### Signing/Sharing Config File
+
+For Developers to know which resource items are accessible it is important to give them access to the config file. To make this task simpler you can just click on the "Sign Config" button. 
+
+After this a window opens with the configuration file (as Json) and the signed message for each chain (only if the private key is available). You can then click on the "Upload to Oracle-Marketplace" button to easily upload it to the official Acria-Oracle-Marketplace.
+
+![alt text](/img/qt15.png ':size=80%x80%')
+
+Developer can then on the Acria-Oracle-Marketplace see a detailed overview of the endpoints available.
+
+![alt text](/img/s2.png)
+
+?> **Tip** Signing the config file with the private key is required to prove that this is the real file. Otherwise anyone would be able to upload a config file in your name.
+
 ## Connect to a local blockchain
 
 To connect to your local nodes you have to first click on the settings icon.
 
 After this a menu opens where you can specify the RPC endpoint as well as the main account of your Ethereum, Polkadot and Binance Smart Chain node. In addition to this you should now also deploy your personal data contract.
 
-![alt text](/img/qt4.png)
+![alt text](/img/qt17.png)
 
 ?> **Tip** The default RPC address of geth is http://127.0.0.1:8545
+
+?> **Tip** It is also possible to specify a custom chain id. This can be useful for tools such as Ganache (when using a non-default chain id) as it's known to sometimes report the wrong chain id.
 
 ### Starting a geth node
 
@@ -98,6 +120,12 @@ Click on the Incoming Transactions icon to view all unprocessed data requests. A
 
 ![alt text](/img/qt5.png)
 
+### View Transaction Information
+
+You can double click on a row to view the details of the transaction.
+
+![alt text](/img/qt18.png ':size=50%x50%')
+
 ## Slashing
 
 If a validator misbehaves by supplying malicious data or due to excessive downtime their delegated stake, as well as the stake of everyone staking on this node, will be completely or partially slashed.
@@ -114,7 +142,7 @@ An Oracle Node receives 80% of the all fees paid. The other 20% are getting dist
 
 It is possible to withdraw the earned fees on the balances tab. To withdraw click one of the button on the lower right.
 
-![alt text](/img/qt6.png)
+![alt text](/img/qt16.png)
 
 ?> **Tip** It is not necessary to claim the reward every period as the reward can also be claimed in bulk for multiple periods at once.
 
