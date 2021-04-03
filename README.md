@@ -5,6 +5,7 @@ Documentation of the Acria Network.
 
 ![GitHub](https://img.shields.io/github/license/Acria-Network/acria-substrate)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Acria-Network/acria-substrate)
+![GitHub](https://img.shields.io/badge/Docsify-4.12.1-blue)
 ![GitHub](https://img.shields.io/badge/Platform-Web-brightgreen)
 ![GitHub](https://badgen.net/twitter/follow/acrianetwork)
 
