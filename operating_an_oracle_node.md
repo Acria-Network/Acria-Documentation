@@ -35,9 +35,10 @@ In the following dialog you can specify all the options of that resource.
 3. The API URL which gets used when an additional parameter gets provided. You should mark the place where the parameter should be placed with %data%.
 4. The parameter type which indicates the way to handle the parameter provided. See the section parameter types for more information.
 
-You must specify how the API response should be parsed. The options are:
+You can also specify how the API response should be parsed. The options are:
 - Json: You can specify the location of the value via Json keys.
 - Regex: If the response is not a Json you can use a regular expression.
+- Script: If you need special/custom behavior for parsing the response (such as combining multiple uint64 into a single uint256) then a script (Javascript) is the right choice.
 
 In addition to this you can also write a short description of the resource which is useful for everyone who intends to implement this oracle node.
 
@@ -67,6 +68,22 @@ The available conversions/commands include:
 - from_timestamp \<format\>
 
 ?> **Tip** You can chain as many function as you like. It's not limited to two.
+
+### Parsing the response with a Script
+
+The Acria-Oracle-Node-Qt provides support for scripting the response parsing with JavaScript.
+
+In the script you have access to the following global variables:
+- response_api: A string representing the response of the API. If you need a Json you can simply parse it using JavaScript (`JSON.parse()`).
+- arg1: The argument given to the script. Useful when using the same script for multiple resources (e.g. when only a JSon-key changes).
+
+?> **Tip** The JS-BigNumber class gets natively injected so you can always use it.
+
+![alt text](/img/qt22.png ':size=80%x80%')
+
+There is also a Script Editor included. Below an example script in said editor which combines the exchange rate of a currency pair in both directions (e.g. USD/GBP + GBP/USD).
+
+![alt text](/img/qt23.png ':size=80%x80%')
 
 ### Signing/Sharing Config File
 
