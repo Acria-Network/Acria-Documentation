@@ -181,6 +181,24 @@ The callback function is pretty much the same as before with the only exception 
     }
 ```
 
+### Parsing Packed Node Response
+
+Sometimes Acria-Oracle-Nodes respond with `uint32`, `uint64` or `uint128` variables merged together in a single `uint256` argument. To extract those values with Solidity you can use the following code.
+
+```js
+//2x uint128
+var1 = uint128(_value);
+var2 = uint128(_value >> 128);
+
+//4x uint64
+var1 = uint64(_value);
+var2 = uint64(_value >> 64);
+var3 = uint64(_value >> 128);
+var4 = uint64(_value >> 192);
+```
+
+?> **Tip** For Oracle Node Operator see [Parsing the response with a Script](http://127.0.0.1:3000/#/operating_an_oracle_node#parsing-the-response-with-a-script)
+
 ### Fees
 
 The Fee provided must cover the gas required (~40000 + whatever gas is required by the callback). Otherwise a request might be stuck till the Ethereum network fees are low enough for the request to be profitable for the Oracle Operator.

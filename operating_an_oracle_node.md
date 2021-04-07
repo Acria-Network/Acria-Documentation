@@ -85,6 +85,49 @@ There is also a Script Editor included. Below an example script in said editor w
 
 ![alt text](/img/qt23.png ':size=80%x80%')
 
+```js
+/*
+convert float to Integer representation (decimal 18, same as ETH)
+*/
+function toUint256(d){
+	var point = d.indexOf('.');
+	if(point != -1){
+      d = d.replace('.','');
+      for(i=d.length-point;i<18;i++)
+          d += '0';
+    }
+    else
+		for(i=0;i<18;i++)
+			d += '0';
+    return d;
+}
+
+/*
+stretch to bytes16 (half of uint256)
+*/
+function to16bytes(s){
+	for(i=s.length;i<32;i++)
+      s="0"+s;
+  	return s;
+}
+
+//parse provided response string as json (api_response)
+var json = JSON.parse(api_response);
+
+//first value, normal exchange rate
+//in this case arg1 is the target currrency
+var d1 = json.rates[arg1].toString();
+//BigNumber gets natively injected so it can always be used
+d1 = to16bytes(BigNumber(toUint256(d1)).toString(16));
+
+//second value, reverse exchange rate
+var d2 = (1/json.rates[arg1]).toString();
+d2 = to16bytes(BigNumber(toUint256(d2)).toString(16));
+
+//combine both
+return "0x" + d1 + d2;
+```
+
 ### Signing/Sharing Config File
 
 For Developers to know which resource items are accessible it is important to give them access to the config file. To make this task simpler you can just click on the "Sign Config" button. 
