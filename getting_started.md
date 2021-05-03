@@ -6,7 +6,7 @@ The Acira Network consists of three different groups of actors. First, the devel
 
 Developers are utilizing the Acria Network for their product. Their users are paying fees to access the information available on the various Oracle Nodes. 
 
-Current the Acria Network can be used on the following chains:
+Currently the Acria Network can be used on the following chains:
 - Polkadot
 - Ethereum
 - Binance Smart Chain
