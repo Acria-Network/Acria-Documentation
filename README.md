@@ -1,4 +1,4 @@
-![Header](https://github.com/Acria-Network/Acria-Staking-Interface/blob/main/img/github_header_color.svg?sanitize=1)
+![Header](https://github.com/Acria-Network/Acria-Documentation/blob/main/header/github_header_color_2.svg?sanitize=1)
 
 # Acria-Documentation
 Documentation of the Acria Network.
