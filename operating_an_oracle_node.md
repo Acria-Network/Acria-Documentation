@@ -8,7 +8,7 @@ Right After starting the Acria Qt Node you have to configure the accounts (keyst
 
 ![alt text](/img/qt19.png)
 
-Alternatively it is also possible to create a new keystore file. To do this simply click on the "Create Wallet" button followed by providing the password for the new keystore file.
+Alternatively, it is also possible to create a new keystore file. To do this, simply click on the "Create Wallet" button followed by providing the password for the new keystore file.
 
 ![alt text](/img/qt20.png ':size=50%x50%')
 
@@ -81,7 +81,7 @@ In the script you have access to the following global variables:
 
 ![alt text](/img/qt22.png ':size=80%x80%')
 
-There is also a Script Editor included. Below an example script in said editor which combines the exchange rate of a currency pair in both directions (e.g. USD/GBP + GBP/USD).
+There is also a Script Editor included. Below is an example script in said editor which combines the exchange rate of a currency pair in both directions (e.g. USD/GBP + GBP/USD).
 
 ![alt text](/img/qt23.png ':size=80%x80%')
 
@@ -136,7 +136,7 @@ After this a window opens with the configuration file (as Json) and the signed m
 
 ![alt text](/img/qt15.png ':size=80%x80%')
 
-Developer can then on the Acria-Oracle-Marketplace see a detailed overview of the endpoints available.
+Developers can then on the Acria-Oracle-Marketplace see a detailed overview of the endpoints available.
 
 ![alt text](/img/s2.png)
 
@@ -176,7 +176,7 @@ https://docs.binance.org/smart-chain/developer/fullnode.html
 
 ## Verify the Node Operation
 
-Click on the Incoming Transactions icon to view all unprocessed data requests. After a requests is completed it will be moved to the „completed requests“ tab.
+Click on the Incoming Transactions icon to view all unprocessed data requests. After a request is completed it will be moved to the „completed requests“ tab.
 
 ![alt text](/img/qt5.png)
 
@@ -200,7 +200,7 @@ An Oracle Node receives 80% of the all fees paid. The other 20% are getting dist
 
 ## Withdrawing
 
-It is possible to withdraw the earned fees on the balances tab. To withdraw click one of the button on the lower right.
+It is possible to withdraw the earned fees on the balances tab. To withdraw click one of the buttons on the lower right.
 
 ![alt text](/img/qt16.png)
 
