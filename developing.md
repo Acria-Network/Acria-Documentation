@@ -4,7 +4,7 @@ Depending on the target blockchain the way to interact with the Acria Network mi
 
 ## Ethereum
 
-The Ethereum branch of the Acria Network operates via callbacks. Meaning that a request sent always produces an callback by the target Node.
+The Ethereum branch of the Acria Network operates via callbacks. Meaning that a request sent always produces a callback by the target Node.
 
 To get started one should first select an Oracle Node offering the desired information. After this the information can be easily accessed via an external call to the Oracle Node contract.
 
@@ -102,7 +102,7 @@ After requesting data from an Oracle Node it responds via a special callback fun
 
 ### Requesting Data with parameters
 
-It is also possible to request data with an additional parameter. For example it is possible to request the exchange rate at an specific point in time (e.g. the BTC/USD exchange rate from yesterday 12am). 
+It is also possible to request data with an additional parameter. For example it is possible to request the exchange rate at a specific point in time (e.g. the BTC/USD exchange rate from yesterday 12am). 
 
 A complete example on how to achieve this can be seen below.
 
