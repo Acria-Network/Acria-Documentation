@@ -262,7 +262,7 @@ it will be `ws://127.0.0.1`   or `ws://localhost`.
 
 The node offers the following application programming interfaces, accessible from the user interface above:
 
- - acria.newOracle(oracleid,oracledata), a function to create a new ORACLE, the oracleid is an integer (u32) not already used and in the oracledata is a json structure with the following fields:  
+ - acria.newOracle(oracleid, oracledata), a function to create a new ORACLE, the oracleid is an integer (u32) not already used and in the oracledata is a json structure with the following fields:  
     - shortdescription - a short description not longer than 64 bytes  
 	- description  - a long description not longer than 6144 bytes  
     - apiurl  - an https address as reference for the API, explaining the possible parameters if any.  
@@ -273,9 +273,9 @@ The node offers the following application programming interfaces, accessible fro
  
  - acria.requestOracleUpdate(oracleaccount,oracleid), is the function used to request a data update to the Acria Oracle Node.  
  
- - acria.oracleUpdate(oracleid,oracledata), is the internal function used from the Oracle, to update the data on the blockchain.  
+ - acria.oracleUpdate(oracleid, oracledata), is the internal function used from the Oracle, to update the data on the blockchain.  
 
- - acria.oracle(AccountId,Oracleid), allows to query the data written from the Oracle matching the AccountId and Oracleid. From the user interface you should select "Chain State","Acria", "Oracle".
+ - acria.oracle(AccountId, Oracleid), allows to query the data written from the Oracle matching the AccountId and Oracleid. From the user interface you should select "Chain State","Acria", "Oracle".
 
 
  For testing you should:  
@@ -286,7 +286,7 @@ The node offers the following application programming interfaces, accessible fro
  5. insert "1" in the "oracleid" field  
  6. insert: 
  ```
- {"shortdescription":"Coingecko - Price BTC/USD","description":"Coingecko collect in real time the transaction from >20 exchanges and calculcate the average price every 60 seconds.","apiurl":"https://www.coingecko.com/","fees":0.1}  
+ {"shortdescription":"Coingecko - Price BTC/USD","description":"Coingecko collect in real time the transaction from >20 exchanges and calculate the average price every 60 seconds.","apiurl":"https://www.coingecko.com/","fees":0.1}  
 ```
 in the field "oracledata",  
 7. Click on "Submit Transaction" and check for the events shown.  
