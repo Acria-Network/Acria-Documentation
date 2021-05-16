@@ -16,7 +16,7 @@ Please follow the developer guide to learn how to implement the Acria Network.
 
 ## Oracle Node Operators
 
-Oracle Node Operators are owners of an API which they also provide via the Acia Network. Via the Acria-Oracle-Node Client it is possible to serve a single API to all compatible chains simultaneously.
+Oracle Node Operators are owners of an API which they also provide via the Acria Network. Via the Acria-Oracle-Node Client it is possible to serve a single API to all compatible chains simultaneously.
 
 Please follow the Oracle Node Operator guide to learn how to become an Oracle Node Operator.
 
