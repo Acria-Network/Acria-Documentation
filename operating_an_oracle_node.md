@@ -115,7 +115,7 @@ function to16bytes(s){
 var json = JSON.parse(api_response);
 
 //first value, normal exchange rate
-//in this case arg1 is the target currrency
+//in this case arg1 is the target currency
 var d1 = json.rates[arg1].toString();
 //BigNumber gets natively injected so it can always be used
 d1 = to16bytes(BigNumber(toUint256(d1)).toString(16));
@@ -200,13 +200,13 @@ An Oracle Node receives 80% of the all fees paid. The other 20% are getting dist
 
 ## Withdrawing
 
-It is possible to withdraw the earned fees on the balances tab. To withdraw click one of the buttons on the lower right.
+It is possible to withdraw the earned fees on the balances tab. To withdraw, click one of the buttons on the lower right.
 
 ![alt text](/img/qt16.png)
 
 ?> **Tip** It is not necessary to claim the reward every period as the reward can also be claimed in bulk for multiple periods at once.
 
-?> **Tip** It is always possible to withdraw the fees although depending on the gas price it might be worth to wait in order to save some gas fees.
+?> **Tip** It is always possible to withdraw the fees although depending on the gas price it might be worth waiting in order to save some gas fees.
 
 ## Deploying a Node Contract
 
