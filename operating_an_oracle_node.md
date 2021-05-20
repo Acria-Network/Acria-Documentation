@@ -33,7 +33,7 @@ In the following dialog you can specify all the options of that resource.
 1. The Name of the resource (e.g. GBP/USD)
 2. The API URL which gets used if no additional parameters are provided
 3. The API URL which gets used when an additional parameter gets provided. You should mark the place where the parameter should be placed with %data%.
-4. The parameter type which indicates the way to handle the parameter provided. See the section parameter types for more information.
+4. The parameter type indicates the way to handle the parameter provided. See the section parameter types for more information.
 
 You can also specify how the API response should be parsed. The options are:
 - Json: You can specify the location of the value via Json keys.
@@ -67,7 +67,7 @@ The available conversions/commands include:
 - address
 - from_timestamp \<format\>
 
-?> **Tip** You can chain as many function as you like. It's not limited to two.
+?> **Tip** You can chain as many functions as you like. It's not limited to two.
 
 ### Parsing the response with a Script
 
