@@ -18,6 +18,11 @@ One of the most pressing issues when developing smart contracts is the lack of r
 
 OS X & Linux:
 
+To install docsify run:
+```sh
+npm i docsify-cli -g
+```
+
 To run the server:
 ```sh
 docsify serve ./Acria-Documentation
