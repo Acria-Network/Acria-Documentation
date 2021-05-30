@@ -216,7 +216,7 @@ In order to operate an Oracle Node it is required to have a personal Oracle Cont
 
 ?> **Tip** The name of an Oracle Node must be unique. The transaction will fail otherwise.
 
-Your personal contract address will be displayed after it got mined.
+Your personal contract address will be displayed right after the transaction got included into a block.
 
 ![alt text](/img/qt24.png ':size=50%x50%')
 
