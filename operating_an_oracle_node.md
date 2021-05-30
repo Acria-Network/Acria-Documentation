@@ -212,6 +212,12 @@ It is possible to withdraw the earned fees on the balances tab. To withdraw, cli
 
 In order to operate an Oracle Node it is required to have a personal Oracle Contract deployed. A contract can be deployed via the settings tab.
 
-![alt text](/img/qt8.png ':size=50%x50%')
+![alt text](/img/qt25.png ':size=50%x50%')
 
 ?> **Tip** The name of an Oracle Node must be unique. The transaction will fail otherwise.
+
+Your personal contract address will be displayed after it got mined.
+
+![alt text](/img/qt24.png ':size=50%x50%')
+
+?> **Tip** This may take several seconds to complete
